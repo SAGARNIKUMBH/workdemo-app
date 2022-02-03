@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import LifeCycleA from "./Component/LifeCycleA";
+import FragmentDemo from "./Component/FragmentDemo";
+import Table from "./Component/Table";
+import PureComp from "./Component/PureComp";
+import ParentComp from "./Component/ParentComp";
+import RefsDemo from "./Component/RefsDemo";
+import FocusInput from "./Component/FocusInput";
+import FRParentInput from "./Component/FRParentInput";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FRParentInput />
+      {/* <FocusInput /> */}
+      {/* <RefsDemo /> */}
+      {/* <ParentComp /> */}
+      {/* <PureComp /> */}
+      {/* <Table /> */}
+      {/* <FragmentDemo /> */}
+      {/* <LifeCycleA /> */}
     </div>
   );
 }
