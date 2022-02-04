@@ -11,15 +11,41 @@ import FRParentInput from "./Component/FRParentInput";
 import PortalDemo from "./Component/PortalDemo";
 import Hero from "./Component/Hero";
 import ErrorBoundary from "./Component/ErrorBoundary";
+import ClickCounter from "./Component/ClickCounter";
+import HoverCounter from "./Component/HoverCounter";
+import ClickCounterTwo from "./Component/ClickCounterTwo";
+import HoverCounterTwo from "./Component/HoverCounterTwo";
+import User from "./Component/User";
+import Counter from "./Component/Counter";
+import ComponentC from "./Component/ComponentC";
+import { UserProvider } from "./Component/userContext";
 
 function App() {
   return (
     <div className="App">
-      <ErrorBoundary>
+      <UserProvider value="Vishwas">
+        <ComponentC />
+      </UserProvider>
+      {/* <Counter
+        render={(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
+      <Counter
+        render={(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
+      <User render={(isLoggedIn) => (isLoggedIn ? "Sagar" : "Guest")} /> */}
+      {/* <HoverCounterTwo /> */}
+      {/* <ClickCounterTwo /> */}
+      {/* <HoverCounter /> */}
+      {/* <ClickCounter name="Sagar" /> */}
+      {/* <ErrorBoundary>
         <Hero heroName="Batman" />
         <Hero heroName="Superman" />
         <Hero heroName="jokar" />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
       {/* <PortalDemo /> */}
       {/* <FRParentInput /> */}
       {/* <FocusInput /> */}
